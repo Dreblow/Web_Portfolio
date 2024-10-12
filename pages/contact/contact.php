@@ -7,6 +7,9 @@ require '/var/www/html/global/PHPMailer-master/src/Exception.php';
 require '/var/www/html/global/PHPMailer-master/src/PHPMailer.php';
 require '/var/www/html/global/PHPMailer-master/src/SMTP.php';
 
+// Load SMTP credentials from an external file
+$config = require '/var/www/html/resources/config.php';
+
 $mail = new PHPMailer(true);
 
 try {
@@ -14,8 +17,8 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;           // Enable SMTP authentication
-    $mail->Username = 'derek.dreblow@gmail.com'; // Your Gmail address
-    $mail->Password = 'SECRET';  // Your Gmail password (or App Password)
+    $mail->Username = $config['smtp_username']; // Load from config
+    $mail->Password = $config['smtp_password']; // Load from config
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption, `PHPMailer::ENCRYPTION_SMTPS` for SSL
     $mail->Port = 587;                // TCP port to connect to
 

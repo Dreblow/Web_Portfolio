@@ -10,7 +10,7 @@ None of this could happen without Ubuntu Server working hard on my Hyper-V VM.
 
 **1. Purchased a Domain and Setup DNS**
 
-* Purchased a domain (**dreblowdesigns.com**) from GoDaddy.
+* Purchased a domain (**dreblowdesigns.com**) from GoDaddy or others like Namesilo.
 * Configured DNS records in GoDaddy to point the A record to your server’s public IP.
 * Set up CNAME records for **www.dreblowdesigns.com** to route traffic correctly.
 
@@ -53,3 +53,20 @@ None of this could happen without Ubuntu Server working hard on my Hyper-V VM.
 * Restarted the vsftpd service to apply the changes.
 * Configured vsftpd to use TLS for secure FTP (FTPS).
 * Tested the connection with FileZilla, fixed directory listing errors, and enabled passive mode on both the FTP server and FileZilla client.
+
+**5. Configuring webpage source code** 
+
+* Copy all web portfolio code to:
+
+`/var/www/html/`
+
+**6. Configure the config.php file**
+
+* This example uses one's gmail to send emails from the web site.
+* At directory location:
+
+`/resources/config.php`
+
+* The above config file needs a username and password.
+* User name is one's full email address `john.doe@gmail.com`
+* Password is app specific password Google provides.
