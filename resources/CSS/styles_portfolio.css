@@ -1,0 +1,31 @@
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.portfolio-item {
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.portfolio-item h3, p {
+    color: black;
+}
+
+.portfolio-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Layout for Mobile */
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
