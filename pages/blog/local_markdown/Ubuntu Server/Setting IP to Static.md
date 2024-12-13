@@ -54,7 +54,9 @@ tags:
       ens33:                   # Replace with your interface name
         addresses:
           - 192.168.1.100/24   # Replace with your desired IP and subnet mask
-        gateway4: 192.168.1.1  # Replace with your gateway
+        routes:
+          - to: 0.0.0.0/0
+            via: 192.168.1.1   # Replace with your gateway
         nameservers:
           addresses:
             - 8.8.8.8          # Google DNS
@@ -65,6 +67,7 @@ tags:
 
 - Apply the changes using:
   ```bash
+  sudo netplan generate
   sudo netplan apply
   ```
 
