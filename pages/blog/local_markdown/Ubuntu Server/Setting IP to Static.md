@@ -3,7 +3,7 @@ title: Setting IP to Static on Ubuntu Server
 description: Learn how to set a static IP address on Ubuntu Server step-by-step.
 keywords: ubuntu, static ip, networking, server configuration, linux
 author: Derek Dreblow
-version: 2024-11-16
+version: 2024-12-14
 categories:
   - Ubuntu Server
   - Networking
@@ -51,7 +51,7 @@ tags:
   network:
     version: 2
     ethernets:
-      ens33:                   # Replace with your interface name
+      eth0:                   # Replace with your interface name
         addresses:
           - 192.168.1.100/24   # Replace with your desired IP and subnet mask
         routes:

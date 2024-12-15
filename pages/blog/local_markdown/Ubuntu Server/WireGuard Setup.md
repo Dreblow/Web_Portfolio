@@ -83,28 +83,39 @@ As of now this guide is WIP, which only supports IPv4 communications. I hope to 
 ---
 
 ## 4. Enable port forwarding (WIP)
-- Enabled IP forwardingto allow routing between the VPN subnet `10.0.0.0/24` and the local network `192.168.1.0/24`
+- Enabled IP forwarding to allow routing between the VPN subnet `10.0.0.0/24` and the specific network address `192.168.1.186`
 - To test if it is enabled, which should return a `1`
-```bash
-sysctl net.ipv4.ip_forward
-```
+  ```bash
+  sysctl net.ipv4.ip_forward
+  ```
 - Edit `/etc/sysctl.conf` and ensure this line exists:
-```bash 
-net.ipv4.ip_forward=1
-```
+  ```bash
+  sudo nano /etc/sysctl.conf
+  ```
+- And update
+  ```bash 
+  net.ipv4.ip_forward=1
+  ```
 - And then apply
-```bash
-sudo sysctl -p
-```
-- Add an `iptables` rule to allow traffic from the VPN to the local network:
-```bash
-sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/24 -d 192.168.1.0/24 -j MASQUERADE
-```
-Save the rule to make it persistent across reboots:
-```bash
-sudo apt install iptables-persistent
-sudo netfilter-persistent save
-```
+  ```bash
+  sudo sysctl -p
+  ```
+
+- Make sure the WireGuard server knows how to forward traffic from the 10.0.0.0/24 subnet to the specific IP in your LAN (e.g., 192.168.1. 186). Add this NAT rule to allow traffic to the specific IP:
+  ```bash
+  sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/24 -d 192.168.1.186 -j MASQUERADE
+  ```
+
+- Add this forwarding rule to allow traffic from `10.0.0.0/24` to `192.168.1.186`:
+  ```bash
+  sudo iptables -A FORWARD -s 10.0.0.0/24 -d 192.168.1.186 -j ACCEPT
+  ```
+
+- Save the rule to make it persistent across reboots:
+  ```bash
+  sudo apt install iptables-persistent
+  sudo netfilter-persistent save
+  ```
 
 ---
 

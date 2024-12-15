@@ -101,7 +101,7 @@ function processDirectory(inputPath, outputPath) {
             const description = frontMatter.description || 'Discover the latest blog posts from Derek Dreblow, focusing on engineering, software development, and project insights.';
             const author = frontMatter.author || "Derek Dreblow"
             const keyword = frontMatter.keyword || "Dreblow Design's Blog"
-            const image = frontMatter.image || "https://dreblowdesigns.com/resources/images/profile_DerekDreblow.jpeg"
+            const image = frontMatter.image || "https://dreblowdesigns.com/pages/blog/local_images/BlogFavicon.png"
             const url = frontMatter.url || "https://dreblowdesigns.com"
 
             // Generate HTML content

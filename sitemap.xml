@@ -9,42 +9,47 @@
 
 <url>
   <loc>https://dreblowdesigns.com/</loc>
-  <lastmod>2024-12-13T03:32:10+00:00</lastmod>
+  <lastmod>2024-12-15T00:24:30+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://dreblowdesigns.com/index.html</loc>
-  <lastmod>2024-12-13T03:32:10+00:00</lastmod>
+  <lastmod>2024-12-15T00:24:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dreblowdesigns.com/pages/about.html</loc>
-  <lastmod>2024-12-13T03:32:11+00:00</lastmod>
+  <lastmod>2024-12-15T00:24:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dreblowdesigns.com/pages/contact/contact.html</loc>
-  <lastmod>2024-12-13T03:32:11+00:00</lastmod>
+  <lastmod>2024-12-15T00:24:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dreblowdesigns.com/pages/blog/local_html/blog.html</loc>
-  <lastmod>2024-12-13T03:32:11+00:00</lastmod>
+  <lastmod>2024-12-15T00:24:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dreblowdesigns.com/pages/blog/local_html/Web%20Dev/Local%20Server.html</loc>
-  <lastmod>2024-12-13T03:32:12+00:00</lastmod>
+  <lastmod>2024-12-15T00:24:31+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dreblowdesigns.com/pages/blog/local_html/Ubuntu%20Server/Setting%20IP%20to%20Static.html</loc>
-  <lastmod>2024-12-13T03:32:12+00:00</lastmod>
+  <lastmod>2024-12-15T00:24:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dreblowdesigns.com/pages/blog/local_html/Ubuntu%20Server/AllThatIsSSH.html</loc>
+  <lastmod>2024-12-15T00:24:31+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dreblowdesigns.com/pages/blog/local_html/Ubuntu%20Server/WireGuard%20Setup.html</loc>
-  <lastmod>2024-12-13T03:32:12+00:00</lastmod>
+  <lastmod>2024-12-15T00:24:31+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
