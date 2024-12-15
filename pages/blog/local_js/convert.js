@@ -114,6 +114,7 @@ function processDirectory(inputPath, outputPath) {
     <meta name="description" content="${description}">
     <meta name="author" content="${author}">
     <meta name="keywords" content="${keyword}">
+    <link rel="canonical" href="https://dreblowdesigns.com/pages/blog/local_html/blog.html">
     
     <!-- Open Graph Metadata -->
     <meta property="og:title" content="${title}">
@@ -129,7 +130,7 @@ function processDirectory(inputPath, outputPath) {
     <meta name="twitter:image" content="${image}
 
     <!-- Default favicon -->
-    <link rel="icon" href="${ROOT_DIR}${relativePath}favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="192x192" href="https://dreblowdesigns.com/favicon.ico" type="image/x-icon">
 
     <!-- PNG favicon for high-resolution displays -->
     <link rel="icon" href="${ROOT_DIR}${relativePath}resources/images/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
