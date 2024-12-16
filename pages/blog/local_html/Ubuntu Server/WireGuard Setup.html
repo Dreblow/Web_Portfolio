@@ -69,7 +69,7 @@
 <h2>1. Install WireGuard on the Server</h2>
 <ul>
 <li>Ensure you have root access to the Linux server.</li>
-<li>Run the following commands:<pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> apt update
+<li>Run the following commands:<pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> apt update &amp;&amp; <span class="hljs-built_in">sudo</span> apt upgrade -y
 <span class="hljs-built_in">sudo</span> apt install wireguard
 </code></pre>
 </li>
@@ -164,9 +164,6 @@
 <hr>
 <h2>5. Enable and Start the WireGuard Interface</h2>
 <ul>
-<li>Persist after a reboot<pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> systemctl <span class="hljs-built_in">enable</span> wg-quick@wg0
-</code></pre>
-</li>
 <li>Start the service<pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> systemctl start wg-quick@wg0
 </code></pre>
 </li>
@@ -193,9 +190,6 @@
 <p><code>iptables</code>:</p>
 <pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> iptables -A INPUT -p udp --dport 51564 -j ACCEPT
 </code></pre>
-</li>
-<li>
-<p>Restrict access to only the server’s subnet.</p>
 </li>
 </ul>
 <hr>

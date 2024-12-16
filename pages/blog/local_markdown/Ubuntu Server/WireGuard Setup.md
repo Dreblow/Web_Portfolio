@@ -26,7 +26,7 @@ As of now this guide is WIP, which only supports IPv4 communications. I hope to 
 - Ensure you have root access to the Linux server.
 - Run the following commands:
     ```bash
-    sudo apt update
+    sudo apt update && sudo apt upgrade -y
     sudo apt install wireguard
     ```
 - Alternatively, you can use Docker if preferred.
@@ -120,10 +120,6 @@ As of now this guide is WIP, which only supports IPv4 communications. I hope to 
 ---
 
 ## 5. Enable and Start the WireGuard Interface
-- Persist after a reboot
-    ```bash
-    sudo systemctl enable wg-quick@wg0
-    ```
 - Start the service
     ```bash
     sudo systemctl start wg-quick@wg0
@@ -150,7 +146,6 @@ As of now this guide is WIP, which only supports IPv4 communications. I hope to 
     ```bash
     sudo iptables -A INPUT -p udp --dport 51564 -j ACCEPT
     ```
-- Restrict access to only the server’s subnet.
 
 ---
 
