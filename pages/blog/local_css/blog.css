@@ -1,3 +1,12 @@
+/*mobile*/
+@media (max-width: 768px) {
+    pre code.hljs {
+        font-size: 14px; /* Or adjust as needed */
+        padding: 0.5em;
+        max-width: 400px;
+    }
+}
+
 /* Center and control content width */
 .markdown-body {
     max-width: 900px; /* Adjust this value as needed */
