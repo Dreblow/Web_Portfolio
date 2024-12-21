@@ -111,6 +111,7 @@ function processDirectory(inputPath, outputPath) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derek Dreblow's Blog</title>
     <meta name="description" content="${description}">
     <meta name="author" content="${author}">
     <meta name="keywords" content="${keyword}">
@@ -159,7 +160,7 @@ function processDirectory(inputPath, outputPath) {
             <ul>
                 <li><a href="${ROOT_DIR}${relativePath}index.html" aria-label="Home">Home</a></li>
                 <li><a href="${ROOT_DIR}${relativePath}pages/about.html" aria-label="About">About</a></li>
-                <!--<li><a href="${ROOT_DIR}${relativePath}pages/portfolio.html">Portfolio</a></li>-->
+                <li><a href="${ROOT_DIR}${relativePath}pages/portfolio.html">Portfolio</a></li>
                 <li><a href="${ROOT_DIR}${relativePath}pages/contact/contact.html" aria-label="Contact">Contact</a></li>
                 <li><a href="${ROOT_DIR}${relativePath}pages/blog/local_html/blog.html" aria-label="Blog">Blog</a></li>
             </ul>
