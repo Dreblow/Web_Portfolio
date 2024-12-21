@@ -6,10 +6,10 @@
     <title>About Derek Dreblow</title>
     <link rel="stylesheet" href="../resources/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="canonical" href="https://dreblowdesigns.com">
 
     <!-- Default favicon -->
-    <link rel="icon" href="resources/images/favicon_io/favicon.ico">
-    <link rel="icon" href="resources/images/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="192x192" href="https://dreblowdesigns.com/favicon.ico" type="image/x-icon">
 
     <!-- PNG favicon for high-resolution displays -->
     <link rel="icon" href="resources/images/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -24,7 +24,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-9RT1T06DM1');
     </script>
 </head>
@@ -32,16 +31,15 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/about.html">About</a></li>
-                <li><a href="/pages/portfolio.html">Portfolio</a></li>
-                <li><a href="/pages/contact/contact.html">Contact</a></li>
+                <li><a href="/index.html" aria-label="Home">Home</a></li>
+                <li><a href="/pages/about.html" aria-label="About">About</a></li>
+                <!--<li><a href="/pages/portfolio.html">Portfolio</a></li>-->
+                <li><a href="/pages/contact/contact.html" aria-label="Contact">Contact</a></li>
+                <li><a href="/pages/blog/local_html/blog.html" aria-label="Blog">Blog</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Wrap your about section in a main tag -->
-    <main>
+    <main class="portfolio">
         <section id="about">
             <div class="content-box">
                 <h2>About Me</h2>
