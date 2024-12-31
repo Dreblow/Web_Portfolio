@@ -30,3 +30,6 @@ This blog was inspired by all the note taking I have done over all my projects. 
 
 #### VPN
 * [WireGuard](./Ubuntu%20Server/WireGuard%20Setup.html)
+
+#### Windows Application Scripting 
+* [AutoHotKey Windows PowerPoint](./Windows_App_Scripting/AutoHotKey.html)

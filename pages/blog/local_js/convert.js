@@ -120,14 +120,14 @@ function processDirectory(inputPath, outputPath) {
     <meta property="og:title" content="${title}">
     <meta property="og:description" content="${description}">
     <meta property="og:image" content="${image}">
-    <meta property="og:url" content="${url}>
+    <meta property="og:url" content="${url}">
     <meta property="og:type" content="website">
     
     <!-- Twitter Card Metadata -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="${image}
+    <meta name="twitter:image" content="${image}">
 
     <!-- Default favicon -->
     <link rel="icon" href="https://dreblowdesigns.com/resources/images/favicon_io/favicon.ico" sizes="192x192" type="image/x-icon">
