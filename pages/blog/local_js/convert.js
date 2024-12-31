@@ -165,7 +165,7 @@ function processDirectory(inputPath, outputPath) {
     <header>
         <nav>
             <ul>
-                <li><a href="${ROOT_DIR}${relativePath}index.html" aria-label="Home">Home</a></li>
+                <li><a href="/" aria-label="Home">Home</a></li>
                 <li><a href="${ROOT_DIR}${relativePath}pages/about.html" aria-label="About">About</a></li>
                 <!--<li><a href="${ROOT_DIR}${relativePath}pages/portfolio.html">Portfolio</a></li>-->
                 <li><a href="${ROOT_DIR}${relativePath}pages/contact/contact.html" aria-label="Contact">Contact</a></li>
