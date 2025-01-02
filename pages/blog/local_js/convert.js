@@ -191,7 +191,10 @@ function processDirectory(inputPath, outputPath) {
                 <img src="${ROOT_DIR}${relativePath}resources/images/brands/threads/threads.png" alt="Threads Logo" style="width: 15px; height: 15px;"> Threads
             </a>
         </div>
-        <p class="copy-right">&copy; 2024 Derek Dreblow, Dreblow Designs. All Rights Reserved.</p>
+        <p class="copy-right">&copy; 2024 - <span id="copyright-year"></span> Derek Dreblow, Dreblow Designs. All Rights Reserved.</p>
+        <script>
+            document.getElementById("copyright-year").textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>`;
