@@ -3,7 +3,7 @@ title: Hello Blog!
 description: Welcome to Derek Dreblow's blog, inspired by project notes and step-by-step solutions for engineering, software development, and server management.
 keywords: Derek Dreblow, blog, engineering, project notes, tutorials, Ubuntu, WireGuard, FTP Server
 author: Derek Dreblow
-version: 2025-02-23
+version: 2025-05-04
 categories:
   - Introduction
 tags:
@@ -21,7 +21,7 @@ This blog was inspired by all the note taking I have done over all my projects. 
 * [Python Basics](./Python/PythonBasics.html)
 
 #### Web Development
-* [Local Server](./Web%20Dev/Local%20Server.html)
+* [Local Server - Python Base](./Web%20Dev/Local%20Server-Python.html)
 * [Mark Down to HTML js converter](./Web%20Dev/Mark%20Down%20to%20HTML.html)
 
 #### Ubuntu Server
