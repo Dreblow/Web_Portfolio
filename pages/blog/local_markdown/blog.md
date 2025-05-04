@@ -22,6 +22,7 @@ This blog was inspired by all the note taking I have done over all my projects. 
 
 #### Web Development
 * [Local Server - Python Base](./Web%20Dev/Local%20Server-Python.html)
+* [Local Server - PHP Base](./Web%20Dev/Local%20Server-PHP.html)
 * [Mark Down to HTML js converter](./Web%20Dev/Mark%20Down%20to%20HTML.html)
 
 #### Ubuntu Server
