@@ -90,6 +90,12 @@ function processDirectory(inputPath, outputPath) {
         if (fs.lstatSync(itemPath).isDirectory()) {
             processDirectory(itemPath, outputItemPath); // Recurse into subdirectory
         } else if (path.extname(item) === '.md') {
+            // Correctly construct relative URL based on actual .html file location
+            const htmlFileName = `${path.basename(item, '.md')}.html`;
+            const relativeUrl = path.join(outputPath, htmlFileName)
+                    .replace(path.join(__dirname, '..', '..', '..'), '') // Trim to site root
+                    .replace(/\\/g, '/');                                // Normalize slashes
+            
             // Process Markdown files
             const fileContent = fs.readFileSync(itemPath, 'utf-8');
             const { data: frontMatter, content } = matter(fileContent);
@@ -102,7 +108,7 @@ function processDirectory(inputPath, outputPath) {
             const author = frontMatter.author || "Derek Dreblow"
             const keyword = frontMatter.keyword || "Dreblow Design's Blog"
             const image = frontMatter.image || "https://dreblowdesigns.com/pages/blog/local_images/BlogFavicon.png"
-            const url = frontMatter.url || "https://dreblowdesigns.com"
+            const url = `https://dreblowdesigns.com${relativeUrl}`;
 
             // Generate HTML content
             const htmlContent = `
@@ -113,7 +119,7 @@ function processDirectory(inputPath, outputPath) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="${description}">
     <meta name="author" content="${author}">
-    <title>${title}</title>
+    <title>Dreblow Design - ${title} blog</title>
     <meta name="keywords" content="${frontMatter.keywords || keyword}">
     <link rel="canonical" href="${url}">
     
