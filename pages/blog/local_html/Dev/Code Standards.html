@@ -66,7 +66,7 @@
     </header>
     <main class="markdown-body">
         <article>
-            <p><em class="blogVersion">Version: May 5, 2025</em></p>
+            <p><em class="blogVersion">Version: May 21, 2025</em></p>
             <h1>Coding Standards for Class Member Ordering in C#</h1>
 <p>Organizing class members in a consistent and predictable order improves <strong>code readability, maintainability,</strong> and reduces <strong>merge conflicts</strong>. According to <a href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1201.md">StyleCop's official rules</a>, here's the recommended ordering for elements inside a class, struct, or interface.</p>
 <hr>
@@ -91,7 +91,7 @@
 <p>This helps separate state, behavior, and nested types clearly.</p>
 </blockquote>
 <hr>
-<h2>🔐 Access Modifier Ordering (SA1202)</h2>
+<h2>Access Modifier Ordering (SA1202)</h2>
 <p>Within each group above (e.g., methods or properties), order by access:</p>
 <ol>
 <li><code>public</code></li>
@@ -101,14 +101,14 @@
 <li><code>private</code></li>
 </ol>
 <hr>
-<h2>⚡ Static vs Instance (SA1204)</h2>
+<h2>Static vs Instance (SA1204)</h2>
 <p>Inside each access level, place static members first:</p>
 <ul>
 <li>Static</li>
 <li>Non-static</li>
 </ul>
 <hr>
-<h2>🔒 Readonly vs Non-Readonly Fields (SA1214 &amp; SA1215)</h2>
+<h2>Readonly vs Non-Readonly Fields (SA1214 &amp; SA1215)</h2>
 <p>When declaring fields, order them as:</p>
 <ol>
 <li><code>readonly</code></li>
@@ -116,7 +116,7 @@
 </ol>
 <p>This rule helps you distinguish between immutable and mutable state.</p>
 <hr>
-<h2>🔍 Unrolled Method Example</h2>
+<h2>Unrolled Method Example</h2>
 <p>Here’s how the <strong>methods</strong> section would look when fully expanded:</p>
 <ol>
 <li><code>public static</code> methods</li>
@@ -131,7 +131,7 @@
 <li><code>private</code> methods</li>
 </ol>
 <hr>
-<h2>🧠 Handling Exceptions to the Rule</h2>
+<h2>Handling Exceptions to the Rule</h2>
 <p>Sometimes you’ll want to <strong>group related members</strong> (like interface implementations) together, even if it breaks the standard order.</p>
 <p><strong>Best practice:</strong> use <strong>partial classes</strong> to separate those concerns cleanly.</p>
 <pre><code class="hljs csharp"><span class="hljs-comment">// File: MyClass.cs</span>

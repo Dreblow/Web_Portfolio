@@ -3,7 +3,7 @@ title: Coding Standards for Class Member Ordering in C#
 description: Learn the recommended ordering for class members in C# using StyleCop rules for cleaner, maintainable, and readable code.
 keywords: C#, StyleCop, coding standards, class ordering, member organization
 author: Derek Dreblow
-version: 2025-05-06
+version: 2025-05-22
 categories:
   - Software Development
   - C#
@@ -43,7 +43,7 @@ Within a class, struct, or interface, use this order:
 
 ---
 
-## 🔐 Access Modifier Ordering (SA1202)
+## Access Modifier Ordering (SA1202)
 
 Within each group above (e.g., methods or properties), order by access:
 
@@ -55,7 +55,7 @@ Within each group above (e.g., methods or properties), order by access:
 
 ---
 
-## ⚡ Static vs Instance (SA1204)
+## Static vs Instance (SA1204)
 
 Inside each access level, place static members first:
 
@@ -64,7 +64,7 @@ Inside each access level, place static members first:
 
 ---
 
-## 🔒 Readonly vs Non-Readonly Fields (SA1214 & SA1215)
+## Readonly vs Non-Readonly Fields (SA1214 & SA1215)
 
 When declaring fields, order them as:
 
@@ -75,7 +75,7 @@ This rule helps you distinguish between immutable and mutable state.
 
 ---
 
-## 🔍 Unrolled Method Example
+## Unrolled Method Example
 
 Here’s how the **methods** section would look when fully expanded:
 
@@ -92,7 +92,7 @@ Here’s how the **methods** section would look when fully expanded:
 
 ---
 
-## 🧠 Handling Exceptions to the Rule
+## Handling Exceptions to the Rule
 
 Sometimes you’ll want to **group related members** (like interface implementations) together, even if it breaks the standard order.
 
